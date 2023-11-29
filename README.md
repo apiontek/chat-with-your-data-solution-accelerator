@@ -64,7 +64,7 @@ Out-of-the-box, you can upload the following file types:
   * Embedding Model 
      * text-embedding-ada-002
     
-  **NOTE**: The deployment template defaults to **gpt-35-turbo** and **text-embedding-ada-002**. If your deployment names are different, update them in the deployment process.
+  **NOTE**: The deployment template defaults to **gpt-4** and **text-embedding-ada-002**. If your deployment names are different, update them in the deployment process.
 
 ## Getting started
 
@@ -87,7 +87,7 @@ Out-of-the-box, you can upload the following file types:
     
     You can find the [ARM template](./infrastructure/deployment.json) used, along with a [Bicep file](./infrastructure/deployment.bicep) for deploying this accelerator in the `/infrastructure` directory.
 
-   **NOTE**: By default, the deployment name in the application settings is equal to the model name (gpt-35-turbo and text-embedding-ada-002). If you named the deployment in a different way, you should update the application settings to match your deployment names.
+   **NOTE**: By default, the deployment name in the application settings is equal to the model name (gpt-4 and text-embedding-ada-002). If you named the deployment in a different way, you should update the application settings to match your deployment names.
     
 1. Navigate to the admin site, where you can upload documents. It will be located at:
     
@@ -247,7 +247,7 @@ docker push YOUR_DOCKER_REGISTRY/YOUR_DOCKER_IMAGE
 |AZURE_SEARCH_FIELDS_METADATA|metadata|Field from your Azure AI Search index that contains metadata for the document. `metadata` if you don't have a specific requirement.|
 |AZURE_OPENAI_RESOURCE||the name of your Azure OpenAI resource|
 |AZURE_OPENAI_MODEL||The name of your model deployment|
-|AZURE_OPENAI_MODEL_NAME|gpt-35-turbo|The name of the model|
+|AZURE_OPENAI_MODEL_NAME|gpt-4|The name of the model|
 |AZURE_OPENAI_KEY||One of the API keys of your Azure OpenAI resource|
 |AZURE_OPENAI_EMBEDDING_MODEL|text-embedding-ada-002|The name of you Azure OpenAI embeddings model deployment|
 |AZURE_OPENAI_TEMPERATURE|0|What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. A value of 0 is recommended when using your data.|

@@ -64,10 +64,10 @@ param AzureSearchUrlColumn string = 'url'
 param AzureOpenAIResource string
 
 @description('Azure OpenAI Model Deployment Name')
-param AzureOpenAIModel string = 'gpt-35-turbo'
+param AzureOpenAIModel string = 'gpt-4'
 
 @description('Azure OpenAI Model Name')
-param AzureOpenAIModelName string = 'gpt-35-turbo'
+param AzureOpenAIModelName string = 'gpt-4'
 
 @description('Azure OpenAI Key')
 @secure()
