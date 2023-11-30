@@ -124,7 +124,7 @@ param AzureSearchIndex string = '${ResourcePrefix}-index'
 param AzureSearchConversationLogIndex string = 'conversations'
 
 @description('Name of Storage Account')
-param StorageAccountName string = '${ResourcePrefix}str'
+param StorageAccountName string = '${replace(ResourcePrefix, '-', '')}str'
 
 @description('Name of Function App for Batch document processing')
 param FunctionName string = '${ResourcePrefix}-backend'
